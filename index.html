@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La tarjeta gráfica - Página Principal</title>
+    <link href="estilo-dam.css" rel="stylesheet" type="text/css">
+    <link href="imagenes/favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="funciones.js"></script>
+    <style>
+	.mySlides {display:none;}
+	</style>
+</head>
+<body>
+    <div id="wrapper">
+        <header> 
+           <span id="titulo">La tarjeta gráfica</span>
+           <i class="fas fa-bars" onclick="mostrar('barra','iconoHam','iconoCerrar')" id="iconoHam"></i>
+           <i class="fas fa-window-close" onclick="ocultar('barra','iconoHam','iconoCerrar')" id="iconoCerrar"></i>
+        </header>
+        <nav id="barra">
+            <ul>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="Pagina1.html">¿Qué es?</a></li>
+               <li><a href="Pagina2.html">Origen</a></li>
+               <li><a href="Pagina3.html">Aplicaciones</a></li>
+               <li><a href="Pagina4.html">Características</a></li>
+               <li><a href="Pagina5.html">Marcas actuales</a></li>
+            </ul>
+        </nav>
+        <section>
+                <h3>La tarjeta gráfica</h3>
+
+				<center><div class="w3-content w3-section" style="max-width:350px" style="max-height:300px">
+ 					<img class="mySlides" src="imagenes/gta.jpg" style="width:80%">
+    				<img class="mySlides" src="imagenes/MH.jpg" style="width:80%">
+    				<img class="mySlides" src="imagenes/970.jpg" style="width:80%">
+
+				</center>
+
+                <p style="color:white">Las tarjetas gráficas llevan acompañándonos durante años, ya sea en el mundo del videojuego o de la edición de video, su inclusión en nuestros sistemas presenta una gran mejoría en el disfrute y eficiencia de nuestras actividades.  
+                 No obstante, ¿qué es una tarjeta gráfica? ¿En qué campos excelen?
+                	¿Desde cuándo existen? ¿Qué marcas hay? ¿Qué debemos buscar en ellas?
+                	  Con esta página intentaremos ofrecer una respuesta a todas estas preguntas.</p>
+
+
+
+
+
+		</section>
+
+        <footer>
+           <p>Autora: Clara Gómez Pino - IES Campanillas</p>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
