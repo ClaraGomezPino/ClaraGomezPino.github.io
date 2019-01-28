@@ -1,0 +1,87 @@
+/* estilo para Alagaesia */
+body {background-image: url('imagenes/tileback.jpg')}
+#wrapper {width:80%;
+          margin:0 auto;    
+          font-family: 'Teko', sans-serif;}
+
+ 
+
+header {background-image:url('imagenes/header.png');
+        background-size:cover;
+        height:18vw;} 
+header span#titulo {position:relative;
+                   top:10vw;
+                   left:50vw;
+                   font-size:5vw;
+                   color:white;}
+/* Los dos iconos para el menú hamburguesa, inicialmente ocultos */
+header i.fas     {color:white;
+          font-size:4vw;
+          position:relative;
+          top:13vw;
+          left: -17vw;
+          /*visibility:hidden;*/ /* he sustituido visibility por display
+                                    más que nada para unificar propiedad
+                                    en verdad daría lo mismo en este caso */
+          display: none;}  
+nav,footer {background-color:black;}
+nav ul {margin:0;
+        padding:1vw 0;}
+nav ul li {display:inline;
+           padding:2vw 2vw;}  
+nav ul li a {text-decoration:none;
+             color:white;
+             font-size:2.5vw;
+             font-weight:bold;} 
+nav ul li a:hover {color:white;}
+section {background-image: url('imagenes/graphics.jpg');
+         /*color:white;*/ /* no hace falta con el tile de fondo. Lo quito */
+         padding:2vw;
+         } 
+section h3 {margin:0;
+            padding:1vw;
+            color:white;
+            text-align:center;
+            font-size:30px;} 
+
+section p {text-align:justify;
+           text-indent:3vw;
+           color:green
+           font-size:99px;} 
+
+section img {padding:2vw 2.2vw;
+             width:15vw;}  
+
+footer p {margin:0;
+          padding:1vw;
+          text-align:center;
+          font-size:3vw;
+          color:white;} 
+
+/* si la pantalla de visualización está por debajo de 400px de ancho */
+@media only screen and (max-width:400px) {
+    /* se muestra el icono de menu hamburguesa y se oculta la barra de navegación */
+   header i.fa-bars {display:inline;  } /* muestra el icono hamburguesa */
+   header i.fa-window-close {display:none;  } /* oculta icono cerrar */
+     nav {display:none;}
+     nav ul {padding:0;}
+     /* la barra se muestra en bloque (vertical) en forma de botones y el tamaño de
+          la letra se agranda para que sea legible */
+     nav ul li {
+          display:block;
+          border:1px solid black;
+          text-align:center;
+     }
+     nav ul li a {
+          font-size:3.5vw;
+     }
+     section img {
+        padding:2vw 3.7vw;
+        width:32vw; 
+
+     }
+     footer p {
+        font-size:2vw;
+     }
+}
+         

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La tarjeta gráfica - Marcas actuales</title>
+    <link href="estilo-dam.css" rel="stylesheet" type="text/css">
+    <link href="imagenes/favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="funciones.js"></script>
+    <style>
+  .mySlides {display:none;}
+  </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header> 
+           <span id="titulo">La tarjeta gráfica</span>
+           <i class="fas fa-bars" onclick="mostrar('barra','iconoHam','iconoCerrar')" id="iconoHam"></i>
+           <i class="fas fa-window-close" onclick="ocultar('barra','iconoHam','iconoCerrar')" id="iconoCerrar"></i>
+        </header>
+        <nav id="barra">
+            <ul>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="Pagina1.html">¿Qué es?</a></li>
+               <li><a href="Pagina2.html">Origen</a></li>
+               <li><a href="Pagina3.html">Aplicaciones</a></li>
+               <li><a href="Pagina4.html">Características</a></li>
+               <li><a href="Pagina5.html">Marcas actuales</a></li>
+            </ul>
+        </nav>
+        <section>
+                <h3>Marcas actuales</h3>
+
+        </center>
+
+                <p style="color:white">
+                  Si estuviésemos interesados en comprar una tarjeta gráfica hace trece años para jugar a algunos de los títulos más potentes en PC quizá oiríamos hablar de marcas como 3dfx, PowerVR, Matrox, S3, Rendition, o SiS. No obstante, prácticamente todas han desaparecido, bien por quedarse tras la competencia o ser compradas por esta; en dispositivos móviles todavía encontramos a PowerVR y algunas otras marcas pequeñas. <br><br><br>
+
+
+
+
+                  Actualmente el mercado de piezas al público general se encuentra bajo un práctico monopolio liderado por la competencia entre Nvidia y AMD. ¿Por qué motivos? Los elevados costes tanto en manufacturación como investigación y desarrollo hacen de cada nuevo producto una apuesta, lo cual en adición al complejo tejido de colaboraciones que conecta a las empresas de hardware hace casi imposible entrar a la carrera en una etapa tan avanzada, y quien sea quien caiga, sufrirá no sólo pérdidas económicas, sino una pérdida de apoyo por parte del exigente consumidor.<br><br><br></p>
+
+
+                  <center>
+                    <div class="w3-content w3-section" style="max-width:400px; max-height:400px">
+                    <img src="imagenes/vs.jpg" style="width:80%"">
+                  </center>
+
+                  <p style="color:white">
+
+                  A la hora de buscar gráficas deberíamos fijarnos en los benchmarks y capacidades ideales para el software de nuestro interés antes que en la propia marca, pues ninguna es perfecta y hay productos de distintas gamas que siempre lograrán mejor o peor lograr sus cometidos dentro de esta. No obstante, existen ciertas tendencias, como AMD ofreciendo mejores prestaciones para el minado de criptomoneda y Nvidia rindiendo mejor (en gran parte porque son diseñados para esta GPU al ser la predominante) en la emulación de videoconsolas. Además de ello debemos tener en cuenta los controladores que van actualizando el rendimiento de la GPU, por lo que echarle un vistazo a los historiales de compatibilidad y eficiencia de estos puede ser una buena manera de decidirse.<br><br><br><br>
+
+
+
+                  Para finalizar, intentaremos recordar algunas marcas caídas y GPUs antiguas mediante imágenes de las portadas clásicas que plagaron el mercado durante años, un arte ya perdido que mas no por ello deja de resultar interesante:</p>
+
+                 <center><div class="w3-content w3-section" style="max-width:20%; max-height:20%">
+                    <img class="mySlides" src="imagenes/portada1.jpg" style="height:150px">
+                    <img class="mySlides" src="imagenes/portada2.jpg" style="height:150px">
+                    <img class="mySlides" src="imagenes/portada3.jpg" style="height:150px">
+                    <img class="mySlides" src="imagenes/portada4.jpg" style="height:150px">
+                    <img class="mySlides" src="imagenes/portada5.jpg" style="height:150px">
+
+                 </center>
+
+
+
+    </section>
+
+        <footer>
+           <p>Autora: Clara Gómez Pino - IES Campanillas</p>
+        </footer>
+    </div>
+
+
+
+<script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+</script>
+
+
+</body>
+</html>
